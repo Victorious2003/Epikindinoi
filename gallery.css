@@ -1,0 +1,545 @@
+/* gallery.css */
+
+/* Special settings for the active link in the navbar (inside dropdown) */
+.dropdown-content a.active {
+    background-color: #FF6700;
+    color: #120A1A;
+    font-weight: bold;
+}
+
+/* Gallery main content */
+.gallery-main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    border: 1px solid #382D4A;
+    text-align: center;
+    color: #E0E0E0;
+    min-height: 60vh;
+    box-sizing: border-box;
+}
+
+.gallery-intro {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: #C0C0C0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* Category Selection (Tabs) */
+.category-selection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+    background-color: rgba(32, 21, 43, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #382D4A;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.gallery-tab-btn {
+    background-color: #1A0A20;
+    color: #FF6700;
+    border: 2px solid #FF6700;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.gallery-tab-btn i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.gallery-tab-btn:hover {
+    background-color: #3498DB;
+    color: #120A1A;
+    border-color: #3498DB;
+}
+
+.gallery-tab-btn.active {
+    background-color: #3498DB;
+    color: #120A1A;
+    border-color: #3498DB;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.7);
+}
+
+/* Image Gallery Container */
+.image-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    min-height: 500px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#loading-images-message, #no-filtered-images-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FF6700;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    background-color: rgba(18, 10, 26, 0.9);
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 1px solid #382D4A;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Individual Gallery Item */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background-color: #1A0A20;
+    border: 1px solid #382D4A;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 103, 0, 0.6);
+}
+
+.gallery-item .image-wrapper {
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Image Overlay - CRITICAL STYLES FOR VISIBILITY */
+.gallery-item .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.0));
+    color: #fff;
+    padding: 15px;
+    padding-top: 40px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 5;
+    box-sizing: border-box;
+    opacity: 1; 
+}
+
+.gallery-item:hover .image-overlay {
+    transform: translateY(0);
+}
+
+.image-overlay h3 { 
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #FF6700;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    line-height: 1.2;
+}
+
+.image-overlay p.image-description { 
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: #C0C0C0;
+    max-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.image-overlay span.submitter-info { 
+    font-size: 0.75em;
+    color: #90EE90;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    margin-top: auto;
+}
+
+/* Submit Image Section (The main container) */
+.submit-image-section {
+    background-color: rgba(32, 21, 43, 0.9);
+    border: 1px solid #382D4A;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    min-height: 200px;
+    animation: fadeInScale 0.8s ease-out forwards;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.submit-image-section h1.page-title,
+.submit-image-section h2 { 
+    color: #3498DB;
+    font-size: 2.2em;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.05em;
+}
+
+.submit-image-section p {
+    font-size: 1em;
+    color: #C0C0C0;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Form Styling - ENHANCEMENTS START HERE */
+.submission-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 35px;
+    background: linear-gradient(145deg, rgba(18, 10, 26, 0.95), rgba(35, 20, 48, 0.95));
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9);
+    border: 1px solid #4A3C5C;
+}
+
+.submission-form .form-group {
+    margin-bottom: 0;
+    text-align: left;
+    position: relative;
+}
+
+.submission-form label {
+    display: block;
+    color: #FF8C00;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.15em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.submission-form input[type="url"],
+.submission-form textarea,
+.submission-form select,
+.submission-form input[type="text"] { 
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    border: 2px solid #5A4E6C;
+    border-radius: 10px;
+    background-color: #0F0815;
+    color: #F0F0F0;
+    font-size: 1.05em;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+}
+
+.submission-form input[type="url"]::placeholder,
+.submission-form textarea::placeholder,
+.submission-form select::placeholder {
+    color: #A0A0A0;
+    opacity: 0.9;
+}
+
+
+.submission-form input[type="url"]:focus,
+.submission-form textarea:focus,
+.submission-form select:focus,
+.submission-form input[type="text"]:focus {
+    outline: none;
+    border-color: #FF6700;
+    box-shadow: 0 0 15px #ff8433;
+    background-color: #1A0A20;
+}
+
+.submission-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submission-form small {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #A0A0A0;
+    font-style: italic;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.submit-btn {
+    background: linear-gradient(145deg, #FF6700, #FF8C00);
+    color: #120A1A;
+    border: none;
+    padding: 18px 40px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: fit-content;
+    margin: 35px auto 0 auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.submit-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, #3498DB, #3498DB);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    z-index: -1;
+}
+
+.submit-btn:hover:before {
+    transform: translateX(0);
+}
+
+.submit-btn:hover {
+    color: white;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 25px hsl(204, 70%, 53%);
+}
+
+.submit-btn i {
+    font-size: 1.4em;
+}
+
+.form-message {
+    margin-top: 30px;
+    padding: 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, background-color 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+.form-message.submitting {
+    background-color: #382D4A;
+    color: #E0E0E0;
+    opacity: 1;
+    border-color: #5A4E6C;
+}
+
+.form-message.success {
+    background-color: #3498DB;
+    color: white;
+    opacity: 1;
+    border-color: #3498DB;
+}
+
+.form-message.error {
+    background-color: #F44336;
+    color: white;
+    opacity: 1;
+    border-color: #CC2222;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .gallery-main-content {
+        padding: 25px;
+        margin: 30px auto;
+    }
+
+    .image-gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .gallery-item .image-wrapper {
+        padding-bottom: 100%; 
+    }
+
+    .gallery-item img {
+        height: 100%;
+    }
+
+    .image-overlay h3 { 
+        font-size: 1.1em;
+    }
+
+    .image-overlay p.image-description { 
+        font-size: 0.85em;
+    }
+
+    .submit-image-section {
+        padding: 25px;
+    }
+    .submission-form {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-main-content {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .page-title {
+        font-size: 2em;
+    }
+
+    .gallery-intro {
+        font-size: 0.95em;
+    }
+
+    .category-selection {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gallery-tab-btn {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+
+    .image-gallery-container {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        min-height: 300px;
+    }
+
+    .gallery-item .image-wrapper {
+        padding-bottom: 75%; 
+    }
+
+    .gallery-item img {
+        height: 100%;
+    }
+
+    .submit-image-section {
+        padding: 20px;
+    }
+
+    .submit-image-section h2 {
+        font-size: 1.8em;
+    }
+
+    .submit-image-section p {
+        font-size: 0.9em;
+    }
+
+    .submission-form {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .submission-form label {
+        font-size: 1em;
+    }
+
+    .submission-form input,
+    .submission-form textarea,
+    .submission-form select {
+        padding: 12px;
+        font-size: 0.95em;
+    }
+
+    .submission-form textarea {
+        min-height: 80px;
+    }
+
+    .submit-btn {
+        font-size: 1.1em;
+        padding: 14px 25px;
+    }
+
+    .form-message {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-main-content {
+        padding: 15px;
+        margin: 15px auto;
+    }
+    .page-title {
+        font-size: 1.6em;
+    }
+    .submit-image-section h2 {
+        font-size: 1.5em;
+    }
+}

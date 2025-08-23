@@ -1,0 +1,340 @@
+/* guild.css */
+
+/* Ειδικές ρυθμίσεις για το active link στο navbar */
+.nav-links a.active {
+    background-color: #3498DB;
+    color: #120A1A;
+    font-weight: bold;
+}
+
+/* Κεντρικό περιεχόμενο της σελίδας σιναφιού */
+.guild-main-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    border: 1px solid #382D4A;
+    text-align: center;
+    color: #E0E0E0;
+}
+
+.page-title {
+    font-size: 2.8em;
+    color: #FF6700;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Εισαγωγική ενότητα */
+.guild-intro {
+    background-color: rgba(32, 21, 43, 0.85);
+    border: 1px solid #382D4A;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    line-height: 1.7;
+    font-size: 1.1em;
+}
+
+/* Ενότητα Αρχών */
+.guild-principles {
+    margin-bottom: 40px;
+    padding: 25px;
+    background-color: rgba(32, 21, 43, 0.85);
+    border: 1px solid #382D4A;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.guild-principles h2 {
+    font-size: 2.2em;
+    color: #3498DB;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.guild-principles h2 i {
+    margin-right: 15px;
+    color: #FF6700;
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.principle-item {
+    background-color: #1A0A20;
+    border: 1px solid #281D30;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.principle-item i {
+    font-size: 3.5em;
+    color: #FF6700;
+    margin-bottom: 15px;
+}
+
+.principle-item h4 {
+    font-size: 1.4em;
+    color: #E0E0E0;
+    margin-bottom: 10px;
+}
+
+.principle-item p {
+    font-size: 0.95em;
+    color: #C0C0C0;
+    line-height: 1.5;
+}
+
+/* Νέα Ενότητα: Ρόλοι στο Σινάφι & Discord */
+.guild-roles {
+    margin-bottom: 40px;
+    padding: 25px;
+    background-color: rgba(32, 21, 43, 0.85);
+    border: 1px solid #382D4A;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.guild-roles h2 {
+    font-size: 2.2em;
+    color: #3498DB;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.guild-roles h2 i {
+    margin-right: 15px;
+    color: #FF6700;
+}
+
+.roles-intro-text {
+    font-size: 1.05em;
+    color: #E0E0E0;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.roles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.role-item {
+    background-color: #1A0A20;
+    border: 1px solid #281D30;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.role-item i {
+    font-size: 3.5em;
+    color: #3498DB;
+    margin-bottom: 15px;
+}
+
+.role-item h4 {
+    font-size: 1.4em;
+    color: #E0E0E0;
+    margin-bottom: 10px;
+}
+
+.role-item p {
+    font-size: 0.95em;
+    color: #C0C0C0;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.role-name {
+    font-size: 0.9em;
+    color: #FF6700;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.roles-footer-text {
+    font-size: 0.95em;
+    color: #A0A0A0;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+/* Ενότητα Στατιστικών */
+.guild-stats {
+    margin-bottom: 40px;
+    padding: 25px;
+    background-color: rgba(32, 21, 43, 0.85);
+    border: 1px solid #382D4A;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.guild-stats h2 {
+    font-size: 2.2em;
+    color: #3498DB;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.guild-stats h2 i {
+    margin-right: 15px;
+    color: #FF6700;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.stat-item {
+    background-color: #1A0A20;
+    border: 1px solid #281D30;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.stat-item i {
+    font-size: 3.5em;
+    color: #3498DB;
+    margin-bottom: 15px;
+}
+
+.stat-item h4 {
+    font-size: 1.4em;
+    color: #E0E0E0;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #FF6700;
+    margin-top: 0;
+}
+
+.stats-note {
+    font-size: 0.9em;
+    color: #A0A0A0;
+    margin-top: 30px;
+}
+
+/* Call to Action για Discord */
+.join-us-cta {
+    padding: 35px 25px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 1px solid #382D4A;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    margin-top: 40px;
+}
+
+.join-us-cta h2 {
+    font-size: 2.5em;
+    color: #FF6700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.join-us-cta p {
+    font-size: 1.1em;
+    color: #E0E0E0;
+    margin-bottom: 30px;
+}
+
+.cta-discord-btn {
+    display: inline-block;
+    background-color: #7289DA;
+    color: #FFFFFF;
+    padding: 18px 40px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #5C72C4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cta-discord-btn:hover {
+    background-color: #677BC4;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.cta-discord-btn i {
+    margin-right: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.2em;
+    }
+
+    .guild-principles h2, .guild-stats h2, .guild-roles h2, .join-us-cta h2 {
+        font-size: 1.8em;
+    }
+
+    .principles-grid, .stats-grid, .roles-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .stat-item p {
+        font-size: 1.5em;
+    }
+
+    .cta-discord-btn {
+        font-size: 1.1em;
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .guild-main-content {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .guild-intro, .guild-principles, .guild-stats, .guild-roles, .join-us-cta {
+        padding: 20px 15px;
+    }
+
+    .page-title {
+        font-size: 1.8em;
+    }
+
+    .principle-item i, .stat-item i, .role-item i {
+        font-size: 3em;
+    }
+
+    .principle-item h4, .stat-item h4, .role-item h4 {
+        font-size: 1.2em;
+    }
+
+    .stat-item p {
+        font-size: 1.3em;
+    }
+
+    .cta-discord-btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}

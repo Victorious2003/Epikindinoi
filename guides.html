@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Οδηγοί / Builds - Επικίνδυνοι</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="guides.css"> 
+    <link rel="stylesheet" href="back-to-top.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="images/logo.jpg" alt="Επικίνδυνοι Logo" class="logo">
+                <span class="guild-name">Επικίνδυνοι</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Αρχική</a></li>
+                <li><a href="news.html">Νέα Παιχνιδιού</a></li>
+                <li><a href="guild.html">Το Σινάφι Μας</a></li> 
+                <li><a href="discord.html">Discord Server</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Περισσότερα <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html">Gallery</a>
+                        <a href="guides.html" class="active">Οδηγοί / Builds</a>
+                        <a href="events.html">Ημερολόγια Events</a>
+                        <a href="recipes.html">Πάγκος Εργασίας</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="guides-main-content">
+        <h1 class="page-title">Οδηγοί & Builds: Ανέβα Επίπεδο!</h1>
+
+        <section class="guides-intro">
+            <p>Εδώ θα βρεις αναλυτικούς οδηγούς και προτεινόμενα builds για όλες τις κλάσεις του Drakensang Online. Είτε είσαι αρχάριος που ψάχνει τις βασικές συμβουλές, είτε έμπειρος παίκτης που θέλει να βελτιστοποιήσει τον χαρακτήρα του, είσαι στο σωστό μέρος!</p>
+            <p>Οι οδηγοί μας δημιουργούνται και ενημερώνονται από τους έμπειρους παίκτες του σιναφιού μας.</p>
+        </section>
+
+        <section class="class-selection">
+            <button class="class-tab-btn active" data-class="warrior">
+                <i class="fas fa-gavel"></i> Πολεμιστής (Dragonknight)
+            </button>
+            <button class="class-tab-btn" data-class="ranger">
+                <i class="fas fa-crosshairs"></i> Τοξότης (Ranger)
+            </button>
+            <button class="class-tab-btn" data-class="mage">
+                <i class="fas fa-hat-wizard"></i> Μάγος (Spellweaver)
+            </button>
+            <button class="class-tab-btn" data-class="dwarf">
+                <i class="fas fa-wrench"></i> Πολυμήχανος Νάνος (Steam Mechanicus)
+            </button>
+        </section>
+
+        <section class="class-guides-container">
+
+            <div id="warrior" class="class-guide-content active">
+                <h2><i class="fas fa-shield-alt"></i> Οδηγός Πολεμιστή: Ο Ακούραστος Tank</h2>
+                <div class="guide-section">
+                    <h3>Εισαγωγή στον Dragonknight</h3>
+                    <p>Ο Dragonknight είναι η επιτομή της αντοχής και της δύναμης στο Drakensang Online. Με την ικανότητα να απορροφά τεράστιο damage και να προκαλεί παράλληλα ζημιά, είναι απαραίτητος σε κάθε ομάδα. Είτε επιλέξεις να παίξεις ως αλύγιστος tank είτε ως ένας επιθετικός DPS warrior, ο Dragonknight προσφέρει πολλές επιλογές.</p>
+                    <p><strong>Βασικά Στατιστικά:</strong> Υγεία, Θωράκιση, Αντίσταση, Ζημιά (για DPS builds).</p>
+                    <img src="images/warrior.jpg" alt="Dragonknight Screenshot" class="guide-image">
+                </div>
+                <div class="guide-section">
+                    <h3>Builds για Αρχάριους</h3>
+                    <p>Για αρχάριους, συνιστάται ένα build που εστιάζει στην αντοχή. Συγκεντρώστε αντικείμενα με υψηλή Θωράκιση, Υγεία και Αντίσταση. Οι βασικές σας ικανότητες θα πρέπει να περιλαμβάνουν αμυντικά buffs και AoE επιθέσεις για αποτελεσματικό farming.</p>
+                    <img src="images/warr-basic-build.jpg" alt="Basic build for a warrior" class="guide-image">
+                </div>
+                <div class="guide-section">
+                    <h3>Mid-Game Builds</h3>
+                    <p>Εστιάστε σε sets που προσφέρουν τεράστια αυξημένη ζημιά και aggro. Ιδανικό για να κρατάτε τους bosses μακριά από την ομάδα.</p>
+                    <p>Αυτό το build θυσιάζει λίγη αντοχή για να μεγιστοποιήσει την ζημιά. Ιδανικό για γρήγορα clears σε dungeons.</p>
+                    <img src="images/mid-game-warrior.jpg" alt="Dragonknight Build" class="guide-image">
+                </div>
+            </div>
+
+            <div id="ranger" class="class-guide-content hidden">
+                <h2><i class="fas fa-crosshairs"></i> Οδηγός Τοξότη: Ο Κυνηγός των Σκιών</h2>
+                <div class="guide-section">
+                    <h3>Εισαγωγή στον Ranger</h3>
+                    <p>Ο Ranger είναι ο master του ranged combat και των παγίδων. Με την ικανότητα να κινούνται γρήγορα, να προκαλούν τεράστια ζημιά από απόσταση και να ελέγχουν το πεδίο μάχης με παγίδες, είναι ένας πολύπλευρος χαρακτήρας.</p>
+                    <p><strong>Βασικά Στατιστικά:</strong> Ζημιά, Ταχύτητα Επίθεσης, Κρίσιμο Χτύπημα, Κρίσιμη Ζημιά.</p>
+                    <img src="images/ranger.jpg" alt="Ranger Screenshot" class="guide-image">
+                </div>
+                <div class="guide-section">
+                    <h3>Builds για Αρχάριους</h3>
+                    <p>Ξεκινήστε εστιάζοντας στην ζημιά και την επιβίωση. Μάθετε να χρησιμοποιείτε τις παγίδες σας αποτελεσματικά για έλεγχο πλήθους και να κρατάτε αποστάσεις από τους εχθρούς. Παρακάτω
+                        θα δείτε δύο από τα build που μπορεί να φτιάξει ένας αρχάριος τοξότης για να μπορέσει να ανταπεξέλθει στο παιχνίδι
+                    </p>
+                    <h3>1. <u>Build για όπλο ενός χεριού</u></h3>
+                    <img src="images/starter_2_ranger.jpg" alt="One hand weapon build" class="guide-image"> <br>
+                    <h3>1. <u>Build για όπλο δύο χεριών</u> (Mid-Game build)</h3>
+                    <img src="images/starter_pack_ranger.jpg" alt="Two hands weapon build" class="guide-image">
+                </div>
+            </div>
+
+            <div id="mage" class="class-guide-content hidden">
+                <h2><i class="fas fa-magic"></i> Οδηγός Μάγου: Ο Άρχοντας των Στοιχείων</h2>
+                <div class="guide-section">
+                    <h3>Εισαγωγή στον Spellweaver</h3>
+                    <p>Ο Spellweaver είναι ο master της μαγείας, ικανός να προκαλέσει τεράστια στοιχειώδη ζημιά σε μεγάλες περιοχές. Με μια πληθώρα ξορκιών για AoE, single target και crowd control, είναι μια δυναμική προσθήκη σε κάθε ομάδα.</p>
+                    <p><strong>Βασικά Στατιστικά:</strong> Ζημιά, Κρίσιμο Χτύπημα, Κρίσιμη Ζημιά, Ταχύτητα Επίθεσης.</p>
+                    <img src="images/mage.jpg" alt="Spellweaver Screenshot" class="guide-image">
+                </div>
+                <div class="guide-section">
+                    <h3>Early-Mid Game build</h3>
+                    <p>Ξεκινήστε με βασικές επιθέσεις και AoE ξόρκια για γρήγορο farming. Εστιάστε στην εύρεση αντικειμένων που αυξάνουν τη ζημιά σας και τη συνολική σας επιβίωση.</p>
+                    <img src="images/mage-build.jpg" alt="Mage Build" class="guide-image">
+                </div>
+            </div>
+
+            <div id="dwarf" class="class-guide-content hidden">
+                <h2><i class="fas fa-cog"></i> Οδηγός Πολυμήχανου Νάνου: Ο Μηχανικός του Θανάτου</h2>
+                <div class="guide-section">
+                    <h3>Εισαγωγή στον Steam Mechanicus</h3>
+                    <p>Ο Steam Mechanicus είναι μια μοναδική κλάση που βασίζεται σε μηχανικά gadgets, τουρρέτες και εκρηκτικά. Είναι εξαιρετικός τόσο σε single target damage όσο και σε AoE, με την ικανότητα να δημιουργεί μια "ζώνη θανάτου" γύρω του.</p>
+                    <p><strong>Βασικά Στατιστικά:</strong> Ζημιά, Ταχύτητα Επίθεσης, Κρίσιμο Χτύπημα, Κρίσιμη Ζημιά.</p>
+                    <img src="images/nanos.jpg" alt="Steam Mechanicus Screenshot" class="guide-image">
+                </div>
+                <div class="guide-section">
+                    <h3>Builds για Αρχάριους</h3>
+                    <p>Εστιάστε στην τοποθέτηση τουρρετών και τη χρήση βασικών εκρηκτικών ικανοτήτων. Μάθετε να διαχειρίζεστε τους πόρους σας (ατμός) και να παραμένετε σε ασφαλή απόσταση.</p>
+                    <ul>
+                        <li>**Suggested Skills:** Machine Gun Turret, Steam Bomb, Tesla Coil, Dwarf in the Box.</li>
+                        <li>**Early Game Gear:** Set items από Heredur, Grimmag.</li>
+                    </ul>
+                </div>
+                <div class="guide-section">
+                    <h3>End-Game Builds</h3>
+                    <h4>Turret Master Build (PvE)</h4>
+                    <p>Αυτό το build μεγιστοποιεί την απόδοση των τουρρετών σας, μετατρέποντάς σας σε μια μηχανή καταστροφής.</p>
+                    <ul>
+                        <li>**Set:** Set items που αυξάνουν το damage/duration των τουρρετών, ή μειώνουν το cooldown τους.</li>
+                        <li>**Stats:** Attack Speed, Crit Hit Rate, Crit Damage (για τις τουρρέτες), Health (για επιβίωση).</li>
+                        <li>**Playstyle:** Τοποθέτηση τουρρετών, διατήρηση τους ενεργές, χρήση άλλων ικανοτήτων για συμπλήρωση damage.</li>
+                    </ul>
+                    <h4>Explosive Damage Build (PvP/PvE)</h4>
+                    <p>Εστιάζει σε high burst damage με εκρηκτικά και άμεσες επιθέσεις. Ιδανικό για γρήγορα kills σε PvP ή για elite farming.</p>
+                    <ul>
+                        <li>**Set:** Full Keen's Mighty Set, Herald Set.</li>
+                        <li>**Stats:** Weapon Damage, Crit Hit Rate, Crit Damage, Attack Speed.</li>
+                        <li>**Playstyle:** Κοντινή/μεσαία απόσταση, burst damage, χρήση "Dwarf in the Box" για διαφυγή/επίθεση.</li>
+                    </ul>
+                    <img src="path/to/your/dwarf_build_example.jpg" alt="Steam Mechanicus Build" class="guide-image">
+                </div>
+            </div>
+
+            <div class="guides-footer-note">
+                <p><strong>Σημείωση:</strong> Όλοι οι οδηγοί και τα builds είναι προτάσεις. Πειραματιστείτε και βρείτε τι λειτουργεί καλύτερα για το δικό σας στυλ παιχνιδιού!</p>
+                <p>Για πιο εξατομικευμένες συμβουλές και συζητήσεις, ελάτε στον <a href="discord.html">Discord server</a> μας!</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Νικηφόρος Καραπατάκης - Σινάφι Drakensang Online. Όλα τα δικαιώματα διατηρούνται.</p>
+            <p>Το Drakensang Online είναι ιδιοκτησία της Bigpoint GmbH.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" title="Πάνω στην Κορυφή">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js" integrity="sha512-x7Lw/T4tM0b6v0o/4rQ+o1lP7/g8b0w+U/xWd4gB9t7fP0p7M0e0q0+y+Y0/g8h/g8g8w+g8g8w+g8g8w+g8g8w+g8g8w=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="gallery.js"></script> 
+    <script src="back-to-top.js"></script>
+    <script src="guides.js"></script> 
+    <script src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Πάγκος Εργασίας - Επικίνδυνοι</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="recipes.css"> 
+    <link rel="stylesheet" href="back-to-top.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="images/logo.jpg" alt="Επικίνδυνοι Logo" class="logo">
+                <span class="guild-name">Επικίνδυνοι</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Αρχική</a></li>
+                <li><a href="news.html">Νέα Παιχνιδιού</a></li>
+                <li><a href="guild.html">Το Σινάφι Μας</a></li>
+                <li><a href="discord.html">Discord Server</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Περισσότερα <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html">Gallery</a>
+                        <a href="guides.html">Οδηγοί / Builds</a>
+                        <a href="events.html">Ημερολόγια Events</a>
+                        <a href="recipes.html" class="active">Πάγκος Εργασίας</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="recipes-main-content">
+        <h1 class="page-title" style="color: #FF6700;">Πάγκος Εργασίας: Κατασκευές & Συνταγές</h1>
+
+        <section class="recipes-intro">
+            <p>Εδώ θα βρείτε όλες τις απαραίτητες συνταγές και οδηγίες κατασκευής για την ενίσχυση του χαρακτήρα σας στο Drakensang Online. Από νόστιμα φαγητά που δίνουν buffs, μέχρι φίλτρα, ρουνογραφίες και πολύτιμους λίθους!</p>
+        </section>
+
+        <section class="category-selection">
+            <button class="recipes-tab-btn active" data-category="kitchen">
+                <i class="fas fa-utensils"></i> Κουζίνα
+            </button>
+            <button class="recipes-tab-btn" data-category="consumables">
+                <i class="fas fa-flask"></i> Αναλώσιμα
+            </button>
+            <button class="recipes-tab-btn" data-category="gems-runes">
+                <i class="fas fa-gem"></i> Ρούνοι
+            </button>
+        </section>
+        
+        <section class="recipes-content-container">
+            <div id="kitchen-content" class="recipe-category-content">
+                <h2 class="category-title"><i class="fas fa-utensils"></i> <span style="color: #FF6700;">Κουζίνα Συνταγές</span></h2>
+                <div class="recipes-grid kitchen-recipes-grid">
+                    <div class="recipe-item">
+                        <h3><i class="fas fa-utensils"></i> Ψαροκροκέτες και Κέτσαπ</h3>
+                        <div class="recipe-image-container">
+                            <img src="images/psarokroketes.jpg" alt="Ψαροκροκέτες και Κέτσαπ">
+                        </div>
+                        <p>Ένα κλασικό γεύμα με πικάντικη γεύση.</p>
+                        <div class="recipe-ingredients">
+                            <strong>Συστατικά:</strong>
+                            <ul>
+                                <li><i class="fas fa-leaf"></i> Ψαροκροκέτες</li>
+                                <li><i class="fas fa-leaf"></i> Κέτσαπ</li>
+                            </ul>
+                        </div>
+                        <p class="recipe-details"><strong>Αποτέλεσμα:</strong> 3x Ψαροκροκέτες και Κέτσαπ</p>
+                    </div>
+                    <div class="recipe-item">
+                        <h3><i class="fas fa-utensils"></i> BBQ Μοσχάρι</h3>
+                        <div class="recipe-image-container">
+                            <img src="images/bbq.jpg" alt="BBQ Μοσχάρι">
+                        </div>
+                        <p>Φτιάξε ένα νόστιμο γεύμα με τα απαραίτητα συστατικά.</p>
+                        <div class="recipe-ingredients">
+                            <strong>Συστατικά:</strong>
+                            <ul>
+                                <li><i class="fas fa-leaf"></i> Μοσχάρι</li>
+                                <li><i class="fas fa-leaf"></i> Σάλτσα BBQ</li>
+                            </ul>
+                        </div>
+                        <p class="recipe-details"><strong>Αποτέλεσμα:</strong> 2x BBQ Μοσχάρι</p>
+                    </div>
+                    <div class="recipe-item">
+                        <h3><i class="fas fa-utensils"></i> Θαλασσινά και Κρέας</h3>
+                        <div class="recipe-image-container">
+                            <img src="images/thalassina_kreas.jpg" alt="Θαλασσινά και Κρέας">
+                        </div>
+                        <p>Στεριά και θάλασσα συνδυασμένα σε ένα πιάτο!</p>
+                        <div class="recipe-ingredients">
+                            <strong>Συστατικά:</strong>
+                            <ul>
+                                <li><i class="fas fa-leaf"></i> Αστακός</li>
+                                <li><i class="fas fa-leaf"></i> Ψαροκροκέτες με Κέτσαπ</li>
+                                <li><i class="fas fa-leaf"></i> BBQ Μοσχάρι</li>
+                            </ul>
+                        </div>
+                        <p class="recipe-details"><strong>Αποτέλεσμα:</strong> 1x Θαλασσινά και Κρέας</p>
+                    </div>
+                     <div class="recipe-item">
+                        <h3><i class="fas fa-utensils"></i> Ουσίες Κάντικορν</h3>
+                        <div class="recipe-image-container">
+                            <img src="images/candycorn.jpg" alt="Ουσίες Κάντικορν">
+                        </div>
+                        <p>Ενισχύουν τη δύναμη επίθεσης και χρησιμοποιούνται ανά επίθεση. Γενικά χρήσιμες και συμφέρουσες!</p>
+                        <div class="recipe-ingredients">
+                            <strong>Συστατικά:</strong>
+                            <ul>
+                                <li><i class="fas fa-leaf"></i> Καλαμπόκι</li>
+                                <li><i class="fas fa-leaf"></i> Επεξεργασμένη Ζάχαρη</li>
+                            </ul>
+                        </div>
+                        <p class="recipe-details"><strong>Αποτέλεσμα:</strong> 100x Κάντικορν</p>
+                    </div>
+                </div>
+
+                <section class="kitchen-converter-section">
+                    <h2 class="category-title" style="margin-top: 50px;"><i class="fas fa-exchange-alt"></i> <span style="color: #FF6700;">Μετατροπέας Νομισμάτων Κουζίνας</span></h2>
+                    <div class="recipes-grid converter-grid">
+                        <div class="recipe-item" style="text-align: center;">
+                            <h3>Ανταλλαγή Γευμάτων για Νομίσματα</h3>
+                            <div class="recipe-image-container">
+                                <img src="images/metatropeas.jpg" alt="Μετατροπέας Νομισμάτων Κουζίνας">
+                            </div>
+                            <p>Μετατρέψτε τα έτοιμα γεύματα της Κουζίνας σε πολύτιμα Νομίσματα Κουζίνας, προσφέροντάς τα στον NPC Ανταλλαγής.</p>
+                            <div class="recipe-ingredients">
+                                <strong>Απαιτούνται:</strong>
+                                <ul>
+                                    <li><i class="fas fa-utensils"></i> Οποιοδήποτε έτοιμο γεύμα από την Κουζίνα</li>
+                                </ul>
+                            </div>
+                            <p class="recipe-details"><strong>Αποτέλεσμα:</strong> Νομίσματα Κουζίνας (ανάλογα με το γεύμα)</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="consumables-content" class="recipe-category-content hidden">
+                <h2 class="category-title"><i class="fas fa-flask"></i> <span style="color: #FF6700;">Αναλώσιμα Συνταγές</span></h2>
+                <div class="recipes-grid">
+                    <div class="recipe-item">
+                        <h3><i class="fas fa-flask"></i> Θρυλικό Τονωτικό Ζωής</h3>
+                        <div class="recipe-image-container">
+                            <img src="images/tonotiko_zoi.jpg" alt="Θρυλικό Τονωτικό Ζωής">
+                        </div>
+                        <p>Καταναλώνεται κατά τη χρήση. Μπορείτε να έχετε ταυτόχρονα ενεργό μόνο ένα τονωτικό.</p>
+                        <div class="recipe-ingredients">
+                            <strong>Επίδραση:</strong>
+                            <ul>
+                                <li><i class="fas fa-heart"></i> +156068 Πόντοι Ζωής (εξαρτάται από το επίπεδο)</li>
+                            </ul>
+                            <strong>Λεπτομέρειες:</strong>
+                            <ul>
+                                <li><i class="fas fa-clock"></i> Διάρκεια: 2ώ. 0λ. 0δ.</li>
+                                <li><i class="fas fa-hourglass-half"></i> Χρόνος Ανάκτησης: 1δ.</li>
+                            </ul>
+                        </div>
+                        <p class="recipe-details"><strong>Τιμή πώλησης:</strong> 31 <i class="fas fa-coins"></i> 77 <i class="fas fa-silver-coin"></i></p>
+                    </div>
+                    <div class="recipe-item">
+                        <h3><i class="fas fa-flask"></i> Θρυλικό Τονωτικό Ρώμης</h3>
+                        <div class="recipe-image-container">
+                            <img src="images/tonotiko_zimia.jpg" alt="Θρυλικό Τονωτικό Ρώμης">
+                        </div>
+                        <p>Καταναλώνεται κατά τη χρήση. Μπορείτε να έχετε ταυτόχρονα ενεργό μόνο ένα τονωτικό.</p>
+                        <div class="recipe-ingredients">
+                            <strong>Επίδραση:</strong>
+                            <ul>
+                                <li><i class="fas fa-fist-raised"></i> +10496 Ζημιά (εξαρτάται από το επίπεδο)</li>
+                            </ul>
+                            <strong>Λεπτομέρειες:</strong>
+                            <ul>
+                                <li><i class="fas fa-clock"></i> Διάρκεια: 2ώ. 0λ. 0δ.</li>
+                                <li><i class="fas fa-hourglass-half"></i> Χρόνος Ανάκτησης: 1δ.</li>
+                            </ul>
+                        </div>
+                        <p class="recipe-details"><strong>Τιμή πώλησης:</strong> 47 <i class="fas fa-coins"></i></p>
+                    </div>
+                    <div class="recipe-item">
+                        <h3><i class="fas fa-flask"></i> Προηγμένο Φάρμακο Ζωής</h3>
+                        <div class="recipe-image-container">
+                            <img src="images/proigmeno_zois.jpg" alt="Προηγμένο Φάρμακο Ζωής">
+                        </div>
+                        <p>Καταναλώνεται κατά τη χρήση. Μπορείτε να έχετε ταυτόχρονα ενεργό μόνο ένα φάρμακο.</p>
+                        <div class="recipe-ingredients">
+                            <strong>Επίδραση:</strong>
+                            <ul>
+                                <li><i class="fas fa-heartbeat"></i> +18.00% Πόντοι Ζωής</li>
+                            </ul>
+                            <strong>Λεπτομέρειες:</strong>
+                            <ul>
+                                <li><i class="fas fa-clock"></i> Διάρκεια: 2ώ. 0λ. 0δ.</li>
+                                <li><i class="fas fa-hourglass-half"></i> Χρόνος Ανάκτησης: 1δ.</li>
+                            </ul>
+                        </div>
+                        <p class="recipe-details"><strong>Τιμή πώλησης:</strong> 9 <i class="fas fa-coins"></i> 94 <i class="fas fa-silver-coin"></i> 40 <i class="fas fa-bronze-coin"></i></p>
+                    </div>
+                    <div class="recipe-item">
+                        <h3><i class="fas fa-flask"></i> Προηγμένο Φάρμακο Ρώμης</h3>
+                        <div class="recipe-image-container">
+                            <img src="images/proigmeno_zimias.jpg" alt="Προηγμένο Φάρμακο Ρώμης">
+                        </div>
+                        <p>Καταναλώνεται κατά τη χρήση. Μπορείτε να έχετε ταυτόχρονα ενεργό μόνο ένα φάρμακο.</p>
+                        <div class="recipe-ingredients">
+                            <strong>Επίδραση:</strong>
+                            <ul>
+                                <li><i class="fas fa-burn"></i> +18.00% Ζημιά</li>
+                            </ul>
+                            <strong>Λεπτομέρειες:</strong>
+                            <ul>
+                                <li><i class="fas fa-clock"></i> Διάρκεια: 2ώ. 0λ. 0δ.</li>
+                                <li><i class="fas fa-hourglass-half"></i> Χρόνος Ανάκτησης: 1δ.</li>
+                            </ul>
+                        </div>
+                        <p class="recipe-details"><strong>Τιμή πώλησης:</strong> 9 <i class="fas fa-coins"></i> 72 <i class="fas fa-silver-coin"></i> 80 <i class="fas fa-bronze-coin"></i></p>
+                    </div>
+                     <div class="recipe-item">
+                        <h3><i class="fas fa-flask"></i> Ελιξίριο του Οστέινου Δράκου (Μόρτις)</h3>
+                        <div class="recipe-image-container">
+                            <img src="images/mpoukalaki_morti.jpg" alt="Ελιξίριο του Οστέινου Δράκου">
+                        </div>
+                        <p>Καταναλώνεται κατά τη χρήση. Ο Μόρτις θα εμφανίσει οστά δράκου όσο αυτό το ελιξίριο είναι ενεργό.</p>
+                        <div class="recipe-ingredients">
+                            <strong>Επίδραση:</strong>
+                            <ul>
+                                <li><i class="fas fa-skull-crossbones"></i> Ο Μόρτις εμφανίζει οστά δράκου όσο η ενίσχυση είναι ενεργή.</li>
+                            </ul>
+                            <strong>Λεπτομέρειες:</strong>
+                            <ul>
+                                <li><i class="fas fa-clock"></i> Διάρκεια: 15λ. 0δ.</li>
+                                <li><i class="fas fa-hourglass-half"></i> Χρόνος Ανάκτησης: 5λ. 0δ.</li>
+                            </ul>
+                        </div>
+                        <p class="recipe-details"><strong>Τιμή πώλησης:</strong> 137 <i class="fas fa-coins"></i> 2 <i class="fas fa-silver-coin"></i></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gems-runes-content" class="recipe-category-content hidden">
+                <h2 class="category-title"><i class="fas fa-gem"></i> <span style="color: #FF6700;">Ρούνοι Συνταγές</span></h2>
+                <div id="runes-content" class="recipe-subcategory-content"> 
+                    <div class="recipes-grid">
+                        <div class="recipe-item">
+                            <h3><i class="fas fa-scroll"></i>Χειμερινός Ρούνος</h3>
+                            <div class="recipe-image-container">
+                                <img src="images/xeimerinos.jpg" alt="Χειμερινός Ρούνος">
+                            </div>
+                            
+                            <p>Συνδυασμός των παρακάτω ρούνων.</p>
+                            <div class="recipe-ingredients">
+                                <strong>Συστατικά:</strong>
+                                <ul>
+                                    <li><i class="fas fa-leaf"></i> Ρούνος Ανθεκτικότητας στον Πάγο</li>
+                                    <li><i class="fas fa-leaf"></i> Ρούνος του Σθένους</li>
+                                    <li><i class="fas fa-leaf"></i> Ρούνος της Ζωτικότητας</li>
+                                    <li><i class="fas fa-leaf"></i> Αεράκι χειμερινής ισημερίας</li>
+                                </ul>
+                            </div>
+                            <p class="recipe-details"><strong>Αποτέλεσμα:</strong> 1x Χειμερινός ρούνος</p>
+                        </div>
+                        <div class="recipe-item">
+                            <h3><i class="fas fa-scroll"></i>Φθινοπωρινός Ρούνος</h3>
+                            <div class="recipe-image-container">
+                                <img src="images/fthinoporinos.jpg" alt="Φθινοπωρινός Ρούνος">
+                            </div>
+                            <p>Συνδυασμός των παρακάτω ρούνων.</p>
+                            <div class="recipe-ingredients">
+                                <strong>Συστατικά:</strong>
+                                <ul>
+                                    <li><i class="fas fa-leaf"></i> Ρούνος της Επιτάχυνσης</li>
+                                    <li><i class="fas fa-leaf"></i> Ρούνος του Σθένους</li>
+                                    <li><i class="fas fa-leaf"></i> Σαγηνευτικά Βατόμουρα</li>
+                                    <li><i class="fas fa-leaf"></i> Κουπόνι δώρου Χαλοουίν</li>
+                                </ul>
+                            </div>
+                            <p class="recipe-details"><strong>Αποτέλεσμα:</strong> 1x Φθινοπωρινός Ρούνος</p>
+                        </div>
+                        <div class="recipe-item">
+                            <h3><i class="fas fa-scroll"></i> Ανοιξιάτικος Ρούνος</h3>
+                            <div class="recipe-image-container">
+                                <img src="images/anoiksiatikos.jpg" alt="Ανοιξιάτικος Ρούνος">
+                            </div>
+                            <p>Συνδυασμός των παρακάτω ρούνων.</p>
+                            <div class="recipe-ingredients">
+                                <strong>Συστατικά:</strong>
+                                <ul>
+                                    <li><i class="fas fa-leaf"></i> Ρούνος της Ζωτικότητας</li>
+                                    <li><i class="fas fa-leaf"></i> Ρούνος της Ερήμωσης</li>
+                                    <li><i class="fas fa-leaf"></i> Ρούνος της Ταχύτητας</li>
+                                    <li><i class="fas fa-leaf"></i> Πινέλο του Ντάραν του διαφθορέα</li>
+                                </ul>
+                            </div>
+                            <p class="recipe-details"><strong>Αποτέλεσμα:</strong> 1x Ανοιξιάτικος Ρούνος</p>
+                        </div>
+                        <div class="recipe-item">
+                            <h3><i class="fas fa-scroll"></i> Καλοκαιρινός Ρούνος</h3>
+                            <div class="recipe-image-container">
+                                <img src="images/kalokairinos.jpg" alt="Καλοκαιρινός Ρούνος">
+                            </div>
+                            <p>Συνδυασμός των παρακάτω ρούνων.</p>
+                            <div class="recipe-ingredients">
+                                <strong>Συστατικά:</strong>
+                                <ul>
+                                    <li><i class="fas fa-leaf"></i> Ρούνος της Αντοχής</li>
+                                    <li><i class="fas fa-leaf"></i> Ρούνος του Σθένους</li>
+                                    <li><i class="fas fa-leaf"></i> Ρούνος της Επιμονής</li>
+                                    <li><i class="fas fa-leaf"></i> Ουσία φλόγας θερινής ισημερίας</li>
+                                </ul>
+                            </div>
+                            <p class="recipe-details"><strong>Αποτέλεσμα:</strong> 1x Καλοκαιρινός Ρούνος</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Νικηφόρος Καραπατάκης - Σινάφι Drakensang Online. Όλα τα δικαιώματα διατηρούνται.</p>
+            <p>Το Drakensang Online είναι ιδιοκτησία της Bigpoint GmbH.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" title="Πάνω στην Κορυφή">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="navbar.js"></script>
+    <script src="recipes.js"></script>
+    <script src="back-to-top.js"></script>
+</body>
+</html>

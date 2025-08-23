@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Νέα Παιχνιδιού - Επικίνδυνοι</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="back-to-top.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="images/logo.jpg" alt="Επικίνδυνοι Logo" class="logo">
+                <span class="guild-name">Επικίνδυνοι</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Αρχική</a></li>
+                <li><a href="news.html" class="active">Νέα Παιχνιδιού</a></li>
+                <li><a href="guild.html">Το Σινάφι Μας</a></li> 
+                <li><a href="discord.html">Discord Server</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Περισσότερα <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html">Gallery</a>
+                        <a href="guides.html">Οδηγοί / Builds</a>
+                        <a href="events.html">Ημερολόγια Events</a>
+                        <a href="recipes.html">Πάγκος Εργασίας</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="news-main-content">
+        <h1 class="page-title" style="color: #FF6700;">Τελευταία Νέα Παιχνιδιού</h1>
+        <p class="news-intro">
+            Όλες οι σημαντικές ενημερώσεις, ανακοινώσεις και νέα από τον κόσμο του Drakensang Online δημοσιεύονται απευθείας στο κανάλι ειδήσεων του Discord server μας.
+        </p>
+
+        <section class="discord-news-section">
+            <h2>Δείτε τα Νέα στο Discord!</h2>
+            <p>Για να παρακολουθήσετε όλες τις τελευταίες ενημερώσεις και ανακοινώσεις, επισκεφθείτε το επίσημο κανάλι ειδήσεων του σιναφιού μας στο Discord:</p>
+            
+            <a href="https://discordapp.com/channels/1027261459295637654/1357673909729628160" target="_blank" class="discord-news-button">
+                <i class="fab fa-discord"></i> Πήγαινε στο Κανάλι Νέων
+            </a>
+            <p class="small-text">Βεβαιωθείτε ότι είστε μέλος του Discord server μας για να αποκτήσετε πρόσβαση.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Νικηφόρος Καραπατάκης - Σινάφι Drakensang Online. Όλα τα δικαιώματα διατηρούνται.</p>
+            <p>Το Drakensang Online είναι ιδιοκτησία της Bigpoint GmbH.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" title="Πάνω στην Κορυφή">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="navbar.js"></script>
+    <script src="back-to-top.js"></script>
+    <script src="news.js"></script> 
+</body>
+</html>

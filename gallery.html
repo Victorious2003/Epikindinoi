@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Επικίνδυνοι</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="gallery.css"> 
+    <link rel="stylesheet" href="back-to-top.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="images/logo.jpg" alt="Επικίνδυνοι Logo" class="logo">
+                <span class="guild-name">Επικίνδυνοι</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Αρχική</a></li>
+                <li><a href="news.html">Νέα Παιχνιδιού</a></li>
+                <li><a href="guild.html">Το Σινάφι Μας</a></li> 
+                <li><a href="discord.html">Discord Server</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Περισσότερα <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html" class="active">Gallery</a>
+                        <a href="guides.html">Οδηγοί / Builds</a>
+                        <a href="events.html">Ημερολόγια Events</a>
+                        <a href="recipes.html">Πάγκος Εργασίας</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="gallery-main-content">
+        <h1 class="page-title" style="color: #FF6700;">Gallery</h1>
+        <p class="gallery-intro">
+            Εδώ θα βρείτε στιγμιότυπα από τις περιπέτειές μας στον κόσμο του Drakensang Online! Από επικές μάχες με bosses και νίκες σε events, μέχρι αστείες στιγμές με την παρέα και εντυπωσιακά PvP.
+        </p>
+
+        <section class="submit-image-section">
+            <h2 style="color: #FF6700;">Πρότεινε μια Φωτογραφία</h2>
+            <p>
+                Έχεις κι εσύ μια επική στιγμή που θέλεις να μοιραστείς; Υποβάλετέ την εδώ! Μετά από έγκριση, θα εμφανιστεί στη Gallery μας.
+            </p>
+            <form class="submission-form">
+                <div class="form-group">
+                    <label for="imageUrl">URL Φωτογραφίας:</label>
+                    <input type="url" id="imageUrl" placeholder="https://example.com/my-awesome-screenshot.jpg" required>
+                    <small>Η διεύθυνση URL της εικόνας σας (π.χ., από Imgur, Discord CDN).</small>
+                </div>
+                <div class="form-group">
+                    <label for="imageAlt">Τίτλος / Εναλλακτικό Κείμενο:</label>
+                    <input type="text" id="imageAlt" placeholder="Επική μάχη με τον Karabossa" required>
+                    <small>Ένας σύντομος τίτλος για τη φωτογραφία σας.</small>
+                </div>
+                <div class="form-group">
+                    <label for="imageDescription">Περιγραφή:</label>
+                    <textarea id="imageDescription" placeholder="Μια αναλυτική περιγραφή της φωτογραφίας..." required></textarea>
+                    <small>Μια σύντομη περιγραφή του τι απεικονίζει η φωτογραφία.</small>
+                </div>
+                <div class="form-group">
+                    <label for="imageCategory">Κατηγορία:</label>
+                    <select id="imageCategory" required>
+                        <option value="">Επιλέξτε κατηγορία</option>
+                        <option value="bosses">Boss Fights</option>
+                        <option value="events">Events</option>
+                        <option value="social">Social Moments</option>
+                        <option value="pvp">PvP</option>
+                        <option value="exploration">Exploration</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="submitterName">Όνομα Υποβολέα:</label>
+                    <input type="text" id="submitterName" placeholder="Το όνομά σας στο παιχνίδι ή στο Discord" required>
+                    <small>Το όνομά σας όπως θέλετε να εμφανίζεται.</small>
+                </div>
+                <button type="submit" class="submit-btn"><i class="fas fa-upload"></i> Υποβολή Φωτογραφίας</button>
+                <p class="form-message hidden"></p>
+            </form>
+        </section>
+
+        <section class="category-selection">
+            <button class="gallery-tab-btn active" data-category="all"><i class="fas fa-images"></i> Όλες οι Φωτογραφίες</button>
+            <button class="gallery-tab-btn" data-category="bosses"><i class="fas fa-dragon"></i> Boss Fights</button>
+            <button class="gallery-tab-btn" data-category="events"><i class="fas fa-calendar-alt"></i> Events</button>
+            <button class="gallery-tab-btn" data-category="social"><i class="fas fa-users"></i> Social Moments</button>
+            <button class="gallery-tab-btn" data-category="pvp"><i class="fas fa-fist-raised"></i> PvP</button>
+            <button class="gallery-tab-btn" data-category="exploration"><i class="fas fa-map-marked-alt"></i> Exploration</button>
+        </section>
+
+        <section id="image-gallery-container" class="image-gallery-container">
+            <p id="loading-images-message" class="loading-message">Φορτώνονται οι εικόνες...</p>
+            <p id="no-filtered-images-message" class="error-message hidden">Δεν βρέθηκαν εικόνες για αυτή την κατηγορία.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Νικηφόρος Καραπατάκης - Σινάφι Drakensang Online. Όλα τα δικαιώματα διατηρούνται.</p>
+            <p>Το Drakensang Online είναι ιδιοκτησία της Bigpoint GmbH.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" title="Πάνω στην Κορυφή">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="navbar.js"></script>
+    <script src="back-to-top.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function() {
+          emailjs.init("feiRl1GQitWf1Egib"); 
+       })();
+    </script>
+    <script src="gallery.js"></script> 
+</body>
+</html>

@@ -1,0 +1,200 @@
+/* discord.css */
+
+/* Ειδικές ρυθμίσεις για το active link στο navbar */
+.nav-links a.active {
+    background-color: #3498DB;
+    color: #120A1A;
+    font-weight: bold;
+}
+
+/* Κεντρικό περιεχόμενο της σελίδας Discord */
+.discord-main-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    border: 1px solid #382D4A;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2.8em;
+    color: #FF6700;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Πλαίσιο πληροφοριών Discord */
+.discord-info-card {
+    background-color: rgba(32, 21, 43, 0.85);
+    border: 1px solid #382D4A;
+    border-radius: 10px;
+    padding: 35px 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.discord-icon {
+    font-size: 5em;
+    color: #7289DA;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(114, 137, 218, 0.6);
+}
+
+.discord-info-card h2 {
+    font-size: 2.2em;
+    color: #3498DB;
+    margin-bottom: 20px;
+}
+
+.discord-info-card p {
+    font-size: 1.1em;
+    color: #E0E0E0;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.discord-info-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px auto 35px;
+    max-width: 600px;
+}
+
+.discord-info-card ul li {
+    font-size: 1.05em;
+    color: #C0C0C0;
+    margin-bottom: 10px;
+    text-align: left;
+    position: relative; 
+    padding-left: 25px;
+}
+
+.discord-info-card ul li::before {
+    content: '\2022';
+    color: #FF6700;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Κουμπί Πρόσκλησης Discord */
+.join-discord-btn {
+    display: inline-block;
+    background-color: #7289DA;
+    color: #FFFFFF;
+    padding: 18px 40px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #5C72C4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.join-discord-btn:hover {
+    background-color: #677BC4;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.join-discord-btn i {
+    margin-right: 12px;
+}
+
+/* Section για τα χαρακτηριστικά του Discord */
+.discord-features {
+    background-color: rgba(32, 21, 43, 0.85);
+    border: 1px solid #382D4A;
+    border-radius: 10px;
+    padding: 35px 25px;
+    margin-top: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.discord-features h3 {
+    font-size: 2em;
+    color: #FF6700;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.feature-item {
+    background-color: #1A0A20;
+    border: 1px solid #281D30;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.feature-item i {
+    font-size: 3em;
+    color: #3498DB; /* Μπλε εικονίδια */
+    margin-bottom: 15px;
+}
+
+.feature-item h4 {
+    font-size: 1.3em;
+    color: #E0E0E0;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 0.95em;
+    color: #C0C0C0;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.2em;
+    }
+
+    .discord-info-card h2 {
+        font-size: 1.8em;
+    }
+
+    .join-discord-btn {
+        font-size: 1.1em;
+        padding: 15px 30px;
+    }
+
+    .discord-features h3 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 480px) {
+    .events-container, .discord-main-content {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .discord-info-card {
+        padding: 25px 15px;
+    }
+
+    .discord-icon {
+        font-size: 4em;
+    }
+
+    .join-discord-btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}

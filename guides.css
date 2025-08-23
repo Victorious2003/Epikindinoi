@@ -1,0 +1,285 @@
+/* guides.css */
+
+/* Ειδικές ρυθμίσεις για το active link στο navbar */
+.nav-links a.active {
+    background-color: #3498DB;
+    color: #120A1A;
+    font-weight: bold;
+}
+
+button, .class-tab-btn, .gallery-tab-btn {
+    font-family: 'Cinzel', serif;
+}
+
+/* Κεντρικό περιεχόμενο της σελίδας οδηγών */
+.guides-main-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    border: 1px solid #382D4A;
+    text-align: center;
+    color: #E0E0E0;
+}
+
+/* Περιεχόμενο Οδηγών Κλάσης */
+.class-guides-container {
+    position: relative;
+    min-height: 500px;
+}
+
+.class-guide-content {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    position: absolute;
+    top: 30px; 
+    left: 30px;
+    right: 30px;
+    width: calc(100% - 60px);
+}
+
+.class-guide-content.active {
+    opacity: 1;
+    position: static;
+    display: block;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.class-guide-content.hidden {
+    display: none;
+}
+
+.page-title {
+    font-size: 2.8em;
+    color: #FF6700;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Εισαγωγική ενότητα */
+.guides-intro {
+    background-color: rgba(32, 21, 43, 0.85);
+    border: 1px solid #382D4A;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    line-height: 1.7;
+    font-size: 1.1em;
+}
+
+/* Ενότητα Επιλογής Κλάσης (Tabs) */
+.class-selection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+    background-color: rgba(32, 21, 43, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #382D4A;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.class-tab-btn {
+    background-color: #1A0A20;
+    color: #FF6700;
+    border: 2px solid #FF6700;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.class-tab-btn i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.class-tab-btn:hover {
+    background-color: #3498DB;
+    color: #120A1A;
+    border-color: #3498DB;
+}
+
+.class-tab-btn.active {
+    background-color: #3498DB;
+    color: #120A1A;
+    border-color: #3498DB;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.7);
+}
+
+/* Περιεχόμενο Οδηγών Κλάσης */
+.class-guides-container {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 1px solid #382D4A;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    text-align: left;
+    padding-left: 5em;
+}
+
+.class-guide-content {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.class-guide-content.hidden {
+    display: none;
+}
+
+.class-guide-content h2 {
+    font-size: 2.5em;
+    color: #FF6700;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.class-guide-content h2 i {
+    margin-right: 15px;
+    color: #3498DB;
+}
+
+.guide-section {
+    background-color: #1A0A20;
+    border: 1px solid #281D30;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.guide-section h3 {
+    font-size: 1.8em;
+    color: #E0E0E0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FF6700;
+    padding-bottom: 5px;
+}
+
+.guide-section p {
+    font-size: 1em;
+    color: #C0C0C0;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.guide-section ul {
+    list-style: disc;
+    margin-left: 25px;
+    color: #C0C0C0;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.guide-section ul li strong {
+    color: #FF6700;
+}
+
+.guide-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #382D4A;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.guides-footer-note {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px dashed #382D4A;
+    font-size: 0.95em;
+    color: #A0A0A0;
+}
+
+.guides-footer-note a {
+    color: #3498DB;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.guides-footer-note a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.2em;
+    }
+
+    .class-selection {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .class-tab-btn {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .class-guide-content h2 {
+        font-size: 2em;
+    }
+
+    .guide-section h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .guides-main-content {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .page-title {
+        font-size: 1.8em;
+    }
+
+    .guides-intro, .class-selection, .class-guides-container {
+        padding: 15px;
+    }
+
+    .class-tab-btn {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+
+    .class-guide-content h2 {
+        font-size: 1.8em;
+    }
+
+    .guide-section h3 {
+        font-size: 1.3em;
+    }
+
+    .guide-section p, .guide-section ul {
+        font-size: 0.9em;
+    }
+}
+
+/* Keyframes για το fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

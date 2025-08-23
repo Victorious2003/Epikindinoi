@@ -1,0 +1,156 @@
+/* events.css */
+
+/* Ειδικές ρυθμίσεις για το active link στο navbar */
+.nav-links a.active {
+    background-color: #3498DB;
+    color: #120A1A;
+    font-weight: bold;
+}
+
+/* Κεντρικό Κοντέινερ Events */
+.events-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    border: 1px solid #382D4A;
+}
+
+.page-title {
+    font-size: 2.8em;
+    color: #FF6700;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.intro-text {
+    font-size: 1.1em;
+    color: #E0E0E0;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.7;
+    padding: 0 20px;
+}
+
+/* Στυλ για το Year Display */
+.year-display {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #3498DB;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 15px 0;
+    border-bottom: 2px solid #382D4A;
+    border-top: 2px solid #382D4A;
+    background-color: rgba(32, 21, 43, 0.6);
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Στυλ για την πλοήγηση των μηνών */
+.events-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.event-month-btn {
+    background-color: #20152B;
+    color: #E0E0E0;
+    padding: 12px 25px;
+    border: 1px solid #382D4A;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.event-month-btn:hover {
+    background-color: #3498DB;
+    color: #120A1A;
+    border-color: #3498DB;
+}
+
+/* Ενεργό κουμπί */
+.event-month-btn.active {
+    background-color: #FF6700;
+    color: #120A1A;
+    border-color: #FF6700;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(255, 103, 0, 0.5);
+}
+
+
+/* Στυλ για το κάθε event calendar item */
+.event-calendar-item {
+    background-color: rgba(32, 21, 43, 0.85);
+    border: 1px solid #382D4A;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.event-calendar-item.hidden {
+    display: none;
+}
+
+.calendar-title {
+    font-size: 1.8em;
+    color: #3498DB;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.calendar-content {
+    background-color: #1A0A20;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #281D30;
+    overflow-x: auto;
+}
+
+.calendar-content pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.95em;
+    color: #C0C0C0;
+    margin: 0;
+}
+
+/* Στυλ για το Discord CTA button */
+.discord-cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.discord-btn {
+    display: inline-block;
+    background-color: #7289DA;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #5C72C4;
+}
+
+.discord-btn:hover { /* Re-added hover effect */
+    background-color: #677BC4;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.discord-btn i {
+    margin-right: 10px;
+}
