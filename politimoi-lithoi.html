@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Πολύτιμοι Λίθοι - Επικίνδυνοι</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="politimoi-lithoi.css">
+    <link rel="stylesheet" href="back-to-top.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="images/logo.gif" alt="Επικίνδυνοι Logo" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Αρχική</a></li>
+                <li><a href="news.html">Νέα Παιχνιδιού</a></li>
+                <li><a href="guild.html">Η Συντεχνία Μας</a></li>
+                <li><a href="discord.html">Discord Server</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Περισσότερα <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="gallery.php">Gallery</a>
+                        <a href="guides.html">Οδηγοί / Builds</a>
+                        <a href="events.html">Ημερολόγια Events</a>
+                        <a href="recipes.html">Πάγκος Εργασίας</a>
+                        <a href="politimoi-lithoi.html" class="active">Πολύτιμοι Λίθοι</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="gems-main-content">
+        <h1 class="page-title">Πολύτιμοι Λίθοι</h1>
+        <p class="page-intro">Εδώ θα βρείτε λεπτομέρειες για τους πολύτιμους λίθους, ρούνους και κοσμήματα στο Drakensang Online.</p>
+        
+        <div class="gem-category">
+            <h2 class="category-title">Πέτρες</h2>
+            <p class="category-description">Εδώ θα βρείτε πληροφορίες για τις επιθετικές και αμυντικές πέτρες.</p>
+            <button class="toggle-btn" data-category="stones"><i class="fas fa-gem"></i> Εμφάνιση / Απόκρυψη</button>
+            <div class="gem-list" id="stones">
+                <div class="subcategory">
+                    <h4>Επιθετικές Πέτρες</h4>
+                    <div class="gem-grid">
+                        <div class="gem-item" data-gem-id="damage-stone">
+                            <img src="images/damage_gem.jpg" alt="Πέτρα Ζημιάς" class="gem-icon">
+                            <span class="gem-name">Πέτρα της Ζημιάς</span>
+                        </div>
+                        <div class="gem-item" data-gem-id="critical-stone">
+                            <img src="images/crit_gem.jpg" alt="Πέτρα Κρίσιμης Ζημιάς" class="gem-icon">
+                            <span class="gem-name">Πέτρα της Κρίσιμης Ζημιάς</span>
+                        </div>
+                        <div class="gem-item" data-gem-id="attack_speed-stone">
+                            <img src="images/attack_speed_gem.jpg" alt="Πέτρα Επιτάχυνσης Επίθεσης" class="gem-icon">
+                            <span class="gem-name">Πέτρα της Επιτάχυνσης Επίθεσης</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcategory">
+                    <h4>Αμυντικές Πέτρες</h4>
+                    <div class="gem-grid">
+                        <div class="gem-item" data-gem-id="armor-stone">
+                            <img src="images/stones/armor-gem.png" alt="Πέτρα Πανοπλίας" class="gem-icon">
+                            <span class="gem-name">Πέτρα της Πανοπλίας</span>
+                        </div>
+                        <div class="gem-item" data-gem-id="health-stone">
+                            <img src="images/stones/health-gem.png" alt="Πέτρα Αντοχής" class="gem-icon">
+                            <span class="gem-name">Πέτρα της Αντοχής</span>
+                        </div>
+                        <div class="gem-item" data-gem-id="imperial-amethyst">
+                            <img src="images/stones/imperial-amethyst.jpg" alt="Αυτοκρατορικός Αμέθυστος" class="gem-icon">
+                            <span class="gem-name">Εκλεπτυσμένος Αυτοκρατορικός Αμέθυστος</span>
+                        </div>
+                        <div class="gem-item" data-gem-id="imperial-rhodolite">
+                            <img src="images/stones/imperial-rhodolite.jpg" alt="Αυτοκρατορικός Ροδολίτης" class="gem-icon">
+                            <span class="gem-name">Εκλεπτυσμένος Αυτοκρατορικός Ροδολίτης</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gem-category">
+            <h2 class="category-title">Ρούνοι</h2>
+            <p class="category-description">Εδώ θα βρείτε όλους τους ρούνους που είναι απαραίτητοι για κάθε παίκτη.</p>
+            <button class="toggle-btn" data-category="runes"><i class="fas fa-infinity"></i> Εμφάνιση / Απόκρυψη</button>
+            <div class="gem-list" id="runes">
+                <div class="gem-grid">
+                    <div class="gem-item" data-gem-id="damage-rune">
+                        <img src="images/runes/damage-rune.png" alt="Ρούνος Ζημιάς" class="gem-icon">
+                        <span class="gem-name">Ρούνος της Ζημιάς</span>
+                    </div>
+                    <div class="gem-item" data-gem-id="attack-speed-rune">
+                        <img src="images/runes/attack-speed-rune.png" alt="Ρούνος Ταχύτητας Επίθεσης" class="gem-icon">
+                        <span class="gem-name">Ρούνος της Ταχύτητας Επίθεσης</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gem-category">
+            <h2 class="category-title">Κοσμήματα</h2>
+            <p class="category-description">Πέτρες που δίνουν επιπλέον στατιστικά, απαραίτητα για την ενίσχυση του παίκτη.</p>
+            <button class="toggle-btn" data-category="jewelry"><i class="fas fa-star"></i> Εμφάνιση / Απόκρυψη</button>
+            <div class="gem-list" id="jewelry">
+                <div class="gem-grid">
+                    <div class="gem-item" data-gem-id="health-jewelry">
+                        <img src="images/jewelry/health-jewelry.png" alt="Κόσμημα Υγείας" class="gem-icon">
+                        <span class="gem-name">Κόσμημα της Υγείας</span>
+                    </div>
+                    <div class="gem-item" data-gem-id="armor-jewelry">
+                        <img src="images/jewelry/armor-jewelry.png" alt="Κόσμημα Πανοπλίας" class="gem-icon">
+                        <span class="gem-name">Κόσμημα της Πανοπλίας</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Νικηφόρος Καραπατάκης - Συντεχνία Drakensang Online. Όλα τα δικαιώματα διατηρούνται.</p>
+            <p>Το Drakensang Online είναι ιδιοκτησία της Bigpoint GmbH.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" title="Πάνω στην Κορυφή">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div id="gemModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        
+        <div class="modal-header">
+            <img id="modalGemImage" src="" alt="Icon" class="modal-gem-icon">
+            <h3 id="modalGemTitle"></h3>
+        </div>
+
+        <div class="modal-body">
+            <img id="modalStatsImage" src="" alt="Stats Description" class="stats-image">
+        </div>
+    </div>
+</div>
+
+    <script src="back-to-top.js"></script>
+    <script src="navbar.js"></script>
+    <script src="politimoi-lithoi.js"></script>
+</body>
+</html>

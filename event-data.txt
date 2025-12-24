@@ -1,0 +1,50 @@
+"2027": {
+        "jan": {
+            "name": "Ιανουάριος",
+            "content": ""
+        },
+        "feb": {
+            "name": "Φεβρουάριος",
+            "content": ""
+        },
+        "mar": {
+            "name": "Μάρτιος",
+            "content": ""
+        },
+        "apr": {
+            "name": "Απρίλιος",
+            "content": ""
+        },
+        "may": {
+            "name": "Μάιος",
+            "content": ""
+        },
+        "june": {
+            "name": "Ιούνιος",
+            "content": ""
+        },
+        "july": {
+            "name": "Ιούλιος",
+            "content": ""
+        },
+        "aug": {
+            "name": "Αύγουστος",
+            "content": ""
+        },
+        "sept": {
+            "name": "Σεπτέμβριος",
+            "content": ""
+        },
+        "oct": {
+            "name": "Οκτώβριος",
+            "content": ""
+        },
+        "nov": {
+            "name": "Νοέμβριος",
+            "content": ""
+        },
+        "dec": {
+            "name": "Δεκέμβριος",
+            "content": ""
+        }
+}
